@@ -37,8 +37,9 @@ function handleNav(current, target)
 {
     current.style.position = "-100vw;";
 }
-
+/*
 rugsButton.addEventListener("click", function(){
     indexWrapper.style.visibility = "hidden";
     rugPicHolder.style.left = "10vw";
 })
+*/
