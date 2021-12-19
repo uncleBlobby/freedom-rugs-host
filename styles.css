@@ -1,0 +1,203 @@
+body, html {
+    height: 100%;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: mainBold;
+    src: url(./assets/fonts/Steiner-W01-Special.ttf)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.blurred-bg {
+    background-image: url(./assets/images/5.jpg);
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
+    min-height: 100%;
+    min-width: 1024px;
+    height: auto;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-origin: center;
+    background-size: cover;
+}
+
+#indexWrapper {
+    visibility: visible;
+    position:inherit;
+}
+
+.mainBody { 
+    font-family: mainBold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.mainText {
+    font-family: mainBold;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 60%;
+    font-size: 9vw;
+    font-weight: bold;
+    margin: 10px 10px;
+    padding: 10px;
+    outline: 4px solid black;
+    outline-offset: -10px;
+    border-radius: 15px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    z-index: 5;
+    mix-blend-mode: screen;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainText {
+        transform: translate(-15%, -50%);
+        width: 90%;
+        left: 15%;
+        top: 10%;
+    }
+}
+
+.navOptions {
+    color: white;
+    font-family: mainBold;
+    font-size: 3vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navOptions {
+        top: 17%;
+        font-size: 4vw;
+        width: 75%;
+        left: 12.5%;
+    }
+}
+
+.navOption {
+    text-align: center;
+    padding: 10px;
+}
+
+.navOption:hover {
+    cursor: pointer;
+    height: 110%;
+    width: 110%;
+    transform: translate(-5%, -5%);
+    position: -2vh;
+}
+
+#rugPics {
+    position: absolute;
+    top: 25%;
+    left: 110vw;
+    height: 70vh;
+    width: 80vw;
+
+    background-position:center;
+    background-repeat:no-repeat;
+    background-origin: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+    #rugPics {
+        
+    }
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+    height: 5vh;
+    width: 100vw;
+    border: 1px solid rgba(255, 255, 0, 0.25);
+    background-color: rgba(255, 255, 0, 0.25);
+}
+
+.navElement {
+    opacity: 1;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 2.5vw;
+    font-size: x-large;
+}
+
+.comingSoonBox {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+
+    border: 1px solid black;
+    margin-top: -100vh;
+    margin-left: 22.5vw;
+    height: 100vh;
+    width: 55vw;
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+    background: url(./assets/images/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.centeredTextPanel {
+    font-family: mainBold;
+    display: block;
+    justify-content: center;
+    border: 10px solid white;
+    border-radius: 10px;
+    height: min-content;
+    width: min-content;
+    margin-top: 25%;
+}
+
+.centeredText {
+    
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    font-size: 18vh;
+    color: white;
+    line-height: 1;
+}
+
+#comingSoon {
+    font-size: 12vh;
+}
+
+.comingSoonImage {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    margin-top: -100vh;
+    margin-left: 22vw;
+    height: 100vh;
+    width: 55vw;
+    background: url(./assets/images/watch-for-it.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    z-index: 2;
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+}
+
