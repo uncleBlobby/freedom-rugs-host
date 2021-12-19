@@ -1,5 +1,5 @@
 body, html {
-    height: 100%;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -67,7 +67,7 @@ body, html {
         transform: translate(-15%, -50%);
         width: 90%;
         left: 15%;
-        top: 10%;
+        top: 5%;
     }
 }
 
@@ -89,7 +89,7 @@ body, html {
 
 @media only screen and (max-width: 600px) {
     .navOptions {
-        top: 17%;
+        top: 12%;
         font-size: 4.5vw;
         width: 75%;
         left: 12.5%;
@@ -112,7 +112,7 @@ body, html {
 
 #rugPics {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 10vw;
     height: 70vh;
     width: 80vw;
