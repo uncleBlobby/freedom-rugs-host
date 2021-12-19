@@ -23,6 +23,7 @@ function rotateBackgroundImage(){
 
 window.onload = function() {
     rotateBackgroundImage();
+    //rugPicHolder.style.display = "none";
 }
 
 function rotateRugPic(){

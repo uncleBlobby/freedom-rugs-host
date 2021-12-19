@@ -111,10 +111,11 @@ body, html {
 #rugPics {
     position: absolute;
     top: 25%;
-    left: 110vw;
+    left: 10vw;
     height: 70vh;
     width: 80vw;
-
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
     background-position:center;
     background-repeat:no-repeat;
     background-origin: center;
@@ -123,7 +124,8 @@ body, html {
 
 @media only screen and (min-width: 600px) {
     #rugPics {
-        
+        display: none;
+        top: 105vh;
     }
 }
 
